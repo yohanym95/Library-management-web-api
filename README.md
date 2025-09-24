@@ -5,6 +5,18 @@ Supports full CRUD operations for **Books** and can be extended for other entiti
 
 ---
 
+## Prerequisites
+
+- **.NET 8 SDK** or later  
+- **SQL Server** (or PostgreSQL, update connection string accordingly)  
+- EF Core CLI tools:  
+
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+---
+
 ## Project Structure
 
 Library.Management/
@@ -12,6 +24,8 @@ Library.Management/
    - Library.Application/ → Application layer (DTOs, services, interfaces, mapping)
    - Library.Domain/ → Domain layer (entities, business logic)
    - Library.Infrastructure/ → Infrastructure layer (DbContext, EF Core, repository implementations)
+
+---
 
 ## Configuration
 
@@ -36,6 +50,8 @@ Navigate to appsettings.json and update the connection string:
 
 Here, put the database connection string for the local database.
 
+---
+
 ## Database Migration
 # Create Initial Migration
 
@@ -47,6 +63,8 @@ Navigate to the project root and create your first migration:
 # Apply Migrations to Database
 
 ```dotnet ef database update --project Library.Management.Infrastructure --startup-project Library.Management.Api```
+
+---
 
 Once the database is set up for this project, you can run the application.
 
