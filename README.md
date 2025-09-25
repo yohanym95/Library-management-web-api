@@ -20,10 +20,11 @@ dotnet tool install --global dotnet-ef
 ## Project Structure
 
 Library.Management/
-   - Library.Api/ → API Layer (controllers, middleware, Program.cs)
-   - Library.Application/ → Application layer (DTOs, services, interfaces, mapping)
-   - Library.Domain/ → Domain layer (entities, business logic)
-   - Library.Infrastructure/ → Infrastructure layer (DbContext, EF Core, repository implementations)
+   - Library.Management.Api/ → API Layer (controllers, middleware, Program.cs)
+   - Library.Management.Application/ → Application layer (DTOs, services, interfaces, mapping)
+   - Library.Management.Domain/ → Domain layer (entities, business logic)
+   - Library.Management.Infrastructure/ → Infrastructure layer (DbContext, EF Core, repository implementations)
+   - Library.Management.Unit.Testing/ → Unit test cases layer (Unit test cases for services)
 
 ---
 
